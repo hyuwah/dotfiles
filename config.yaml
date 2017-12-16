@@ -1,0 +1,30 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_aliases:
+    dst: ~/.aliases
+    src: aliases
+    link: true
+  f_bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  f_functions:
+    dst: ~/.functions
+    src: functions
+    link: true
+  f_gitconfig:
+    dst: ~/.gitconfig
+    src: gitconfig
+  f_zshrc:
+    dst: ~/.zshrc
+    src: zshrc
+    link: true
+profiles:
+  SnailsPC:
+    dotfiles:
+    - f_gitconfig
+    - f_bashrc
+    - f_zshrc
+    - f_aliases

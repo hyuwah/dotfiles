@@ -1,0 +1,13 @@
+# Prompt
+alias cls="clear && printf '\e[3]'"
+ 
+# mv, rm, cp, gunzip
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+
+# zshrc config
+alias reload="source ~/.zshrc && echo 'Shell config reloaded from ~/.zshrc'"
+# Oh My Zsh Aliases
+alias zshconfig="nano ~/.zshrc"
+alias ohmyzsh="cd ~/.oh-my-zsh"
