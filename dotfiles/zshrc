@@ -82,11 +82,17 @@ plugins=(
   yarn
   zsh-autosuggestions
   zsh-syntax-highlighting
+  colored-man-pages
+  adb
+  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias plis)
 
 # Directory coloring
 if [[ $OSTYPE = (darwin|freebsd)* ]]; then
@@ -112,3 +118,5 @@ for file in ~/.{aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -11,3 +11,8 @@ alias reload="source ~/.zshrc && echo 'Shell config reloaded from ~/.zshrc'"
 # Oh My Zsh Aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
+
+# Clipboard
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+

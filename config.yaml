@@ -28,3 +28,4 @@ profiles:
     - f_bashrc
     - f_zshrc
     - f_aliases
+    - f_functions
